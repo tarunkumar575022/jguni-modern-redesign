@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
@@ -28,9 +28,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "glass premium-shadow py-3" : "bg-transparent py-5"
-      }`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? "glass premium-shadow py-3" : "bg-transparent py-5"
+        }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <Link href="/" className="flex items-center space-x-2">
@@ -48,9 +47,8 @@ const Navbar = () => {
             <Link
               key={link.name}
               href={link.href}
-              className={`font-medium transition-colors hover:text-royal ${
-                isScrolled ? "text-navy" : "text-white"
-              }`}
+              className={`font-medium transition-colors hover:text-royal ${isScrolled ? "text-navy" : "text-white"
+                }`}
             >
               {link.name}
             </Link>
